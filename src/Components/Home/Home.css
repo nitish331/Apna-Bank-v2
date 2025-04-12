@@ -1,0 +1,131 @@
+:root {
+  --dark-color: #1e2222;
+  --light-color: white;
+  --border-bottom-left-radius: 22px;
+  --border-top-left-radius: 22px;
+  --gray-shade: #b2beb5;
+  --linear-gradients: linear-gradient(to right, #009fff, #ec2f4b);
+  --small-box-shadow: rgba(255, 255, 255, 0.699) 0px 3px 8px;
+  --medium-box-shadow: rgba(255, 255, 255, 0.637) 0px 13px 27px -5px,
+    rgba(255, 255, 255, 0.568) 0px 8px 16px -8px;
+  --large-box-shadow: rgba(172, 169, 169, 0.705) 0px 8px 24px,
+    rgba(255, 255, 255, 0.568) 0px 16px 56px, white 0px 24px 80px;
+  --inset-box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid a img {
+  border-bottom-left-radius: var(--border-bottom-left-radius);
+  border-top-right-radius: var(--border-top-left-radius);
+  box-shadow: var(--small-box-shadow);
+}
+
+.navbar {
+  box-shadow: var(--medium-box-shadow);
+}
+
+.nav-item a:hover {
+  border-bottom: solid 2px rgba(255, 255, 255, 0.644);
+}
+
+.btn-hover {
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-color: white;
+  color: #0d6efd;
+  box-shadow: var(--inset-box-shadow);
+}
+
+/* home section starts */
+.home {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/543/898/original/blockchain-technology-fintech-cryptocurrency-block-chain-server-abstract-background-linked-block-contain-cryptography-hash-and-transaction-data-new-futuristic-system-technology-vector-illustration.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+.home button,
+.carrer button {
+  background: var(--linear-gradients);
+  box-shadow: var(--medium-box-shadow);
+}
+
+.home button:hover,
+.carrer button:hover {
+  box-shadow: var(--inset-box-shadow);
+}
+
+/* home section ends */
+
+/* general clases */
+.small-shadow {
+  box-shadow: var(--small-box-shadow);
+}
+
+.medium-shadow {
+  box-shadow: var(--medium-box-shadow);
+  transition: all 0.4s ease-in-out;
+}
+
+.medium-shadow:hover {
+  box-shadow: var(--large-box-shadow);
+}
+
+.border-radius {
+  border-bottom-left-radius: var(--border-bottom-left-radius);
+  border-top-right-radius: var(--border-top-left-radius);
+}
+
+.color-dark {
+  color: var(--dark-color);
+}
+
+/* who we are section starts */
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+.image {
+  background-image: url("https://th.bing.com/th/id/R.f73f4edd5101eb40763bfb2486b8041c?rik=S4dm%2fPPil1pzWw&riu=http%3a%2f%2fwww.itbriefcase.net%2fwp-content%2fuploads%2f2018%2f04%2fcloud-security.jpg&ehk=5jgyoaXTKwdBUqqCU7G2QFjntpdwbphEnEy6EuKjWHk%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* who we are section ends */
+
+/* carrers section starts */
+.bg-image {
+  background-image: url("https://s7ap1.scene7.com/is/image/TCSCOMprod/home-footer-careers-updated:Small?wid=575&hei=680&dpr=off");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* carrers section ends */
+
+/* Who we are section starts */
+.bk-img {
+  background-image: url("https://wallpapercave.com/wp/wp1877444.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* who we are section ends */
+/* services section starts */
+
+.ser-bk-img {
+  background-image: url("https://www.swipsystems.com/wp-content/uploads/2019/04/technology-is-a-tool.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* services section ends */
